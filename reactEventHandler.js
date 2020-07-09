@@ -2,7 +2,6 @@
 // register HTML5 API: Drag & Drop thru onDrag* | onDrop
 // 註冊 H5 的『拖曳功能』事件處理器
 
-
 var React = require('react');
 // in 2016 react-dom is React.DOM
 var ReactDOM = require('react-dom')
@@ -45,16 +44,18 @@ var QueryEditor = React.createClass({
     
 });
 
-
 // 使用工廠讓元件物件有製造元素實體的機會
 ReactDOM.DropZone({
-    //參數跟如下類別的屬性和方法有關
+    //h5 物件的參數可指定 react 類別的屬性和方法
     //React 的 className 等同於 H5 的 class
     className: 'dropzone',
-    // 未完成
+    onDragOver: this.dragHandler,
+    onDragEnter: this.deHandler,
+    onDragLeave: this.dlHandler,
+    onDrop: this.dropHandler,
+    "Hi Kate is Back."// this.state.c // 要考慮是否要在此順便宣告定義共同屬性的 a 和 b
 
-})
-
+});
 
 // 建立類別即元件物件
 // 如不初始化狀態物件，則預設為 null
