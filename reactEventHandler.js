@@ -4,7 +4,7 @@
 
 
 var React = require('react');
-//var ReactDom = require('react-dom'); we use React.DOM instead of react-dom
+// in 2016 react-dom is React.DOM
 var ReactDOM = require('react-dom')
 
 var QueryEditor = React.createClass({
