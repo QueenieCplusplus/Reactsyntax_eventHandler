@@ -13,16 +13,16 @@ var QueryEditor = React.createClass({
 
         return
 
-            <div className = 'query-editor'> //尚未定義
+            <div className = 'query-editor'> //祖元件
    
-                <div className = 'row' > // 尚未定義
+                <div className = 'row' > //父元件
    
-                    <aside className = 'col'> // 尚未定義
+                    <aside className = 'col'> //子元件
    
    
                     </aside>
    
-                    <div className = 'canvas'> // 尚未定義
+                    <div className = 'canvas'> //孫元件
    
                         // React className 等同於 H5 的 class
                         <div className = 'dropzone' // 示範定義如最下方內文從 Line 60 開始
