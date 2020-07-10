@@ -2,6 +2,8 @@
 // register HTML5 API: Drag & Drop thru onDrag* | onDrop
 // 註冊 H5 的『拖曳功能』事件處理器
 
+//元件層級: 
+
 
 var React = require('react');
 //var ReactDom = require('react-dom'); we use React.DOM instead of react-dom
