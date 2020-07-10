@@ -2,44 +2,44 @@
 // register HTML5 API: Drag & Drop thru onDrag* | onDrop
 // 註冊 H5 的『拖曳功能』事件處理器
 
+
 var React = require('react');
-// in 2016 react-dom is React.DOM
+//var ReactDom = require('react-dom'); we use React.DOM instead of react-dom
 var ReactDOM = require('react-dom')
 
 var QueryEditor = React.createClass({
 
-    return(
+    render(
 
-         <div className = 'query-editor'> //尚未定義
+        return
 
-            <div className = 'row' > // 尚未定義
-
-                <aside className = 'col'> // 尚未定義
-
-
-                </aside>
-
-                <div className = 'canvas'> // 尚未定義
-
-                    // React className 等同於 H5 的 class
-                    <div className = 'dropzone' // 示範定義如最下方內文從 Line 60 開始
-
-                        onDragOver = {this.dragHandler}
-                        onDragEnter = {this.deHandler}
-                        onDragLeave = {this.dlHandler}
-                        onDrop = {this.dropHandler}
-                        
-                    >
-
-                        <label className= 'dropzone'>  {this.state.c} </label>
-
-                     </div>
-
+            <div className = 'query-editor'> //尚未定義
+   
+                <div className = 'row' > // 尚未定義
+   
+                    <aside className = 'col'> // 尚未定義
+   
+   
+                    </aside>
+   
+                    <div className = 'canvas'> // 尚未定義
+   
+                        // React className 等同於 H5 的 class
+                        <div className = 'dropzone' // 示範定義如最下方內文從 Line 60 開始
+   
+                            onDragOver = {this.dragHandler}
+                            onDragEnter = {this.deHandler}
+                            onDragLeave = {this.dlHandler}
+                            onDrop = {this.dropHandler}
+                           
+                        >
+   
+                            <label className= 'dropzone'>  {this.state.c} </label>
+   
+                        </div>
+                    </div>
                  </div>
-
-            </div>
-        </div>
-        
+            </div>      
     );
     
 });
